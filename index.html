@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Variables</title>
+</head>
+<body>
+	<script>
+		//body mass index
+		var height = prompt("How tall are you in Inches? 5 feet = 60 inches");
+		var weight = prompt("What is you weight in pounds?");
+		weight = parseFloat(weight);
+		height = parseFloat(height);
+		weight = weight/2.2;
+		height = height/39.37;
+		//console.log(weight);
+		//console.log(height);
+		height = (height * height);
+		var bmi = (weight/height);
+		console.log((bmi).toFixed(2));
+
+		//temperature
+		var celsius = prompt("What is the temperature in Celsius?");
+		celsius = parseFloat(celsius)
+		var faren = (celsius * (9 / 5) + 32);
+		console.log(faren);
+
+
+		//test scores
+		var step;
+		var score = 0;
+		for (step = 0; step < 5; step++) {
+		var testscore = prompt("Please enter a test score");
+		testscore = parseFloat(testscore)
+		score = (score + testscore);
+		//console.log(testscore);
+		//console.log(score);
+		}
+		console.log(score / 5);
+
+	</script>
+</body>
+</html>
